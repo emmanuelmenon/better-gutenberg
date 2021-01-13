@@ -1,0 +1,82 @@
+@import url(fonts/SourceSerifPro.css);
+
+/* Basic */
+body {
+    background: #fff8e5;
+    width: 57.5%;
+    margin: 0 auto;
+    font-family: 'Source Serif Pro', 'Georgia', serif;
+    font-size: 200%;
+    text-align: justify;
+    text-rendering: optimizeLegibility;
+}
+
+/* Text Stylings */
+pre { font-style: italic; }
+h1, h2, h3, h4, pre { text-align: center; clear: both; }
+h1 { font-size: 2.25em; line-height: 0.5; margin: 0.5em 0;  }
+h2 { font-size: 1.5em; line-height: 0.75; margin: 0.75em 0; }
+h3 { font-size: 1.125em; line-height: 1; margin: 1em 0; }
+h4 { font-size: 0.875em; line-height: 1.285; margin: 1.285em 0; }
+p, blockquote { font-size: 0.75em;  line-height: 1.5; margin: 1.5em 0; }
+p + p { text-indent: 2em; }
+.foot, .pagenum, pre { font-size: 0.625em; line-height: 1.8; margin: 1.8em 0; }
+
+/* Line Dividers*/
+hr { width: 10%; text-align: center; margin: 1.5em auto; clear: both; }
+
+/* Footers */
+.foot {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    text-indent: -4em;
+}
+
+/* Blockquotes */
+blockquote { font-style: italic; margin-right: 1.5em; }
+
+/* Editor's Note */
+.mynote {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #DDE;
+    padding: 1em;
+    text-align: left;
+    display: inline-grid;
+}
+.mynote b {
+    font-size: 0.875em;
+    line-height: 1.285;
+    margin: 1.285em 0 -1.75em;
+}
+
+/* Table of Contents */
+.toc, .index ul { text-indent: 0; list-style: none; }
+blockquote > .toc { margin-right: -1.5em; }
+
+/* Figures & Tables*/
+table { margin: 0 auto; padding: 0.25em; }
+.fig { display: block; margin: 0 auto; text-align: center; }
+.figleft { float: left; margin-left: 0; margin-right: 2.5%; }
+.figright { float: right; margin-right: 0; margin-left: 2.5%; }
+
+/* Page Numbers - uncomment visibilty to hide them */
+.pagenum {
+    /* visibility: hidden; */
+    position: absolute;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    right: 0;
+}
+
+
+/* Misc */
+.middle { margin: 0 auto; }
+.smaller { font-size: smaller; }
+.larger { font-size: larger; }
+.smcap { font-variant: small-caps; }
+.center { text-align: center; }
+.left { text-align: right; }
+.right { text-align: right; }
+.tbrk { margin-top: 2.75em; text-align: justify; margin-bottom: .75em; }
