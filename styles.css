@@ -1,5 +1,3 @@
-@import url(fonts/SourceSerifPro.css);
-
 /* Basic */
 body {
     background: #fff8e5;
@@ -65,7 +63,6 @@ table { margin: 0 auto; padding: 0.25em; }
     /* visibility: hidden; */
     position: absolute;
     display: inline;
-    margin: 0;
     padding: 0;
     right: 0;
 }
