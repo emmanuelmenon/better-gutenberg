@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Better Gutenberg
 @namespace BetterGutenberg
-@version 1.0.2
+@version 1.0.3
 @author Emmanuel Menon <emmanuel@emmanuelmenon.com> (https://emmanuelmenon.com)
 @description An attempt at making Project Gutenberg books feel a little easier on the eyes.
 @homepageURL https://github.com/emmanuelmenon/better-gutenberg
@@ -14,7 +14,7 @@
 @-moz-document regexp("(https:\/\/gutenberg\.org\/files\/)\d{1,}\/\d{1,}-h\/\d{1,}-h.htm") {
     /* Basic */
     body {
-        background: #fff8e5;
+        background: white; /* More "bookish" color - #fff8e5 */
         width: 55%;
         margin: 0 auto;
         font-family: 'Source Serif Pro', 'Georgia', serif;
