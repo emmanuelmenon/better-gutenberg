@@ -3,7 +3,7 @@
 @namespace BetterGutenberg
 @version 1.1.4
 @author Emmanuel Menon <emmanuel@emmanuelmenon.com> (https://emmanuelmenon.com)
-@description An attempt at making Project Gutenberg books feel a little easier on the eyes.
+@description An attempt at making reading Project Gutenberg books a little easier on the eyes.
 @homepageURL https://github.com/emmanuelmenon/better-gutenberg
 @supportURL https://github.com/emmanuelmenon/better-gutenberg/issues
 @updateURL https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css
@@ -20,6 +20,7 @@
         font-size: 200%;
         text-align: justify;
         text-rendering: optimizeLegibility;
+        line-height: 1;
     }
 
     /* Text Styling */
@@ -32,7 +33,6 @@
     h4,
     pre {
         text-align: center;
-        line-height: 1;
         clear: both;
     }
     h1 {
@@ -86,8 +86,7 @@
 
     /* Footers */
     .foot {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin: 5em 0;
         text-align: justify;
         text-indent: -3em;
     }
@@ -169,12 +168,12 @@
     .figleft {
         float: left;
         margin-left: 0;
-        margin-right: 2.5%;
+        margin-right: 1.5em;
     }
     .figright {
         float: right;
         margin-right: 0;
-        margin-left: 2.5%;
+        margin-left: 1.5em;
     }
     .figcenter {
         margin: auto;
@@ -222,13 +221,13 @@
     }
     .dropcap {
         float: left;
-        padding-right: 3px;
-        font-size: 300%;
-        line-height: 83%;
+        padding-right: 0.1em;
+        margin: 0.5em 0;
+        font-size: 2.25em;
     }
     .tbrk {
         margin-top: 2.75em;
         text-align: justify;
-        margin-bottom: .75em;
+        margin-bottom: 0.75em;
     }
 }
