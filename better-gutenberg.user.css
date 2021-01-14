@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Better Gutenberg
 @namespace BetterGutenberg
-@version 1.0.3
+@version 1.1.0
 @author Emmanuel Menon <emmanuel@emmanuelmenon.com> (https://emmanuelmenon.com)
 @description An attempt at making Project Gutenberg books feel a little easier on the eyes.
 @homepageURL https://github.com/emmanuelmenon/better-gutenberg
@@ -9,13 +9,12 @@
 @updateURL https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css
 @license Unlicense
 ==/UserStyle== */
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-/* Source Serif Pro from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); /* Source Serif Pro from Google Fonts */
 @-moz-document regexp("(https:\/\/gutenberg\.org\/files\/)\d{1,}\/\d{1,}-h\/\d{1,}-h.htm") {
     /* Basic */
     body {
         background: white; /* More "bookish" color - #fff8e5 */
-        width: 55%;
+        width: 50%;
         margin: 0 auto;
         font-family: 'Source Serif Pro', 'Georgia', serif;
         font-size: 200%;
@@ -23,7 +22,7 @@
         text-rendering: optimizeLegibility;
     }
 
-    /* Text Stylings */
+    /* Text Styling */
     pre {
         font-style: italic;
     }
@@ -33,21 +32,19 @@
     h4,
     pre {
         text-align: center;
+        line-height: 1;
         clear: both;
     }
     h1 {
         font-size: 2.25em;
-        line-height: 0.5;
         margin: 0.5em 0;
     }
     h2 {
         font-size: 1.5em;
-        line-height: 0.75;
         margin: 0.75em 0;
     }
     h3 {
         font-size: 1.125em;
-        line-height: 1;
         margin: 1em 0;
     }
     h4 {
@@ -56,13 +53,14 @@
         margin: 1.285em 0;
     }
     p,
-    blockquote {
+    blockquote,
+    .poetry {
         font-size: 0.75em;
         line-height: 1.5;
         margin: 1.5em 0;
     }
     p + p {
-        text-indent: 2em;
+        text-indent: 3em;
     }
     .foot,
     .pagenum,
@@ -85,22 +83,56 @@
         margin-left: 20%;
         margin-right: 20%;
         text-align: justify;
-        text-indent: -4em;
+        text-indent: -3em;
     }
 
     /* Blockquotes */
     blockquote {
+        color: grey;
+        border-left: 0.125em solid grey;
         font-style: italic;
+        padding-right: 0.25em;
         margin-right: 1.5em;
     }
 
-    /* Editor's Notes */
-    .mynote {
-        font-family: 'Open Sans', sans-serif;
+    /* Poetry */
+    .poetry-container {
+        text-align: center;
+        color: grey;
+        font-style: italic;
+    }
+    .poetry {
+        text-align: left;
+        margin: 0 5em;
+    }
+    .poetry .indent0 {
+        text-indent: -3em;
+    }
+    .poetry .indent2 {
+        text-indent: -2em;
+    }
+    .poetry .stanza {
+        margin: 1em auto;
+    }
+    .poetry .verse {
+        text-indent: -3em;
+        padding-left: 3em;
+    }
+    .poetry .citation {
+        text-align: right;
+    }
+
+    /* Transcriber's Notes */
+    .mynote, .transnote {
         background-color: #DDE;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0 auto;
+        max-width: 20em;
+    }
+    .mynote p, .transnote p {
         padding: 1em;
         text-align: left;
-        display: inline-grid;
+        text-indent: 0;
     }
     .mynote b {
         font-size: 0.875em;
@@ -138,6 +170,12 @@
         margin-right: 0;
         margin-left: 2.5%;
     }
+    .figcenter {
+        margin: auto;
+        text-align: center;
+        page-break-inside: avoid;
+        max-width: 50%;
+    }
 
     /* Page Numbers - uncomment visibilty to hide them */
     .pagenum {
@@ -146,6 +184,12 @@
         display: inline;
         padding: 0;
         right: 0;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     /* Misc */
@@ -164,11 +208,17 @@
     .center {
         text-align: center;
     }
-    .left {
+    .left, .tdl {
         text-align: right;
     }
-    .right {
+    .right, .tdr {
         text-align: right;
+    }
+    .dropcap {
+        float: left;
+        padding-right: 3px;
+        font-size: 300%;
+        line-height: 83%;
     }
     .tbrk {
         margin-top: 2.75em;
