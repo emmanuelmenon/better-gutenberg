@@ -1,16 +1,16 @@
 /* ==UserStyle==
 @name Better Gutenberg
 @namespace BetterGutenberg
-@version 1.0.0
+@version 1.0.1
 @author Emmanuel Menon <emmanuel@emmanuelmenon.com> (https://emmanuelmenon.com)
 @description An attempt at making Project Gutenberg books feel a little easier on the eyes.
 @homepageURL https://github.com/emmanuelmenon/better-gutenberg
 @issues https://github.com/emmanuelmenon/better-gutenberg/issues
 @updateURL https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css
 @license Unlicense
-@-moz-document regexp("(https:\/\/www\.gutenberg\.org\/files\/)\d{1,}\/\d{1,}-h\/\d{1,}-h.htm")
 ==/UserStyle== */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); /* Source Serif Pro from Google Fonts */
+@-moz-document regexp("(https:\/\/www\.gutenberg\.org\/files\/)\d{1,}\/\d{1,}-h\/\d{1,}-h.htm") {
 /* Basic */
 body {
     background: #fff8e5;
@@ -90,3 +90,4 @@ table { margin: 0 auto; padding: 0.25em; }
 .left { text-align: right; }
 .right { text-align: right; }
 .tbrk { margin-top: 2.75em; text-align: justify; margin-bottom: .75em; }
+}
