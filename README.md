@@ -2,11 +2,13 @@
 This project is my attempt at increasing the readability of [Project Gutenberg](https://www.gutenberg.org/)'s HTML books. Results will be a little inconsistent across Gutenberg's catalog because of how Project Gutenberg styles its books, but if you do notice any weirdness, don't hesitate to [open an issue](https://github.com/emmanuelmenon/better-gutenberg/issues/new), or to [submit a pull request](https://github.com/emmanuelmenon/better-gutenberg/compare).
 
 ## Installing
-You'll need some sort of userstyle extension. Options include:
+You'll need some sort of userstyle extension. Examples include:
 - Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)) - **recommended**
 - xStyle ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/xstyle/), [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj))
 
-Once the extension is installed, click [here](https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css) to install the custom style. It supports automatic updates, so it's a click-and-forget!
+Once the extension is installed, click on the badge below to install the custom style. It supports automatic updates, so it's a click-and-forget!
+
+[![Install with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css)
 
 ## License
 Available [here](https://github.com/emmanuelmenon/better-gutenberg/blob/main/LICENSE.md) as well.
