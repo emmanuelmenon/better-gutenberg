@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Better Gutenberg
 @namespace BetterGutenberg
-@version 1.1.1
+@version 1.1.2
 @author Emmanuel Menon <emmanuel@emmanuelmenon.com> (https://emmanuelmenon.com)
 @description An attempt at making Project Gutenberg books feel a little easier on the eyes.
 @homepageURL https://github.com/emmanuelmenon/better-gutenberg
@@ -89,10 +89,8 @@
     /* Blockquotes */
     blockquote {
         color: grey;
-        border-left: 0.125em solid grey;
         font-style: italic;
-        padding-right: 0.25em;
-        margin-right: 1.5em;
+        padding: 1.5em;
     }
 
     /* Poetry */
@@ -143,11 +141,12 @@
     /* Table of Contents */
     .toc,
     .index ul {
+        margin: 2.5em 0;
         text-indent: 0;
         list-style: none;
     }
     blockquote > .toc {
-        margin-right: -1.5em;
+        text-align: center;
     }
 
     /* Figures & Tables */
