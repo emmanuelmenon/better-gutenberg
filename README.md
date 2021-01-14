@@ -1,17 +1,17 @@
 # Better Gutenberg
-This project is my attempt at increasing the readability of [Project Gutenberg](https://www.gutenberg.org/)'s HTML books. Results will be a little inconsistent across Gutenberg's catalog because of how Project Gutenberg styles its books, but if you do notice any weirdness, don't hesitate to [open an issue](https://github.com/emmanuelmenon/better-gutenberg/issues/new), or to [submit a pull request](https://github.com/emmanuelmenon/better-gutenberg/compare).
+This project is my attempt at increasing the readability of [Project Gutenberg](https://www.gutenberg.org/)'s HTML books. Results will be a little inconsistent across Gutenberg's catalog because of how Project Gutenberg styles their books, but if you do notice any weirdness, don't hesitate to [open an issue](https://github.com/emmanuelmenon/better-gutenberg/issues/new), or to [submit a pull request](https://github.com/emmanuelmenon/better-gutenberg/compare).
 
 ## Installing
-You'll need some sort of userstyle extension. Examples include:
-- Stylus ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)) - **recommended**
-- xStyle ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/xstyle/), [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj))
+You'll need to install Stylus or some sort of userstyle extension. You can install Stylus at any of these links:
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+- [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+- [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 
-Once the extension is installed, click on the badge below to install the custom style. It supports automatic updates, so it's a click-and-forget!
+Once Stylus is installed, click on the badge below to install the custom style. Automatic updates are enabled by default, so it's a click-and-forget installation!
 
-[![Install with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/emmanuelmenon/better-gutenberg/main/better-gutenberg.user.css)
 
 ## License
-Available [here](https://github.com/emmanuelmenon/better-gutenberg/blob/main/LICENSE.md) as well.
 ```
 This is free and unencumbered software released into the public domain.
 
