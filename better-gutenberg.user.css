@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name Better Gutenberg
 @namespace BetterGutenberg
-@version 1.1.4
+@version 1.1.5
 @author Emmanuel Menon <emmanuel@emmanuelmenon.com> (https://emmanuelmenon.com)
 @description An attempt at making reading Project Gutenberg books a little easier on the eyes.
 @homepageURL https://github.com/emmanuelmenon/better-gutenberg
@@ -54,7 +54,8 @@
     }
     p,
     blockquote,
-    .poetry {
+    .poetry,
+    p.poem {
         font-size: 0.75em;
         line-height: 1.5;
         margin: 1.5em 0;
@@ -99,14 +100,14 @@
     }
 
     /* Poetry */
-    .poetry-container {
+    div.poetry-container, p.poem {
         text-align: center;
         color: grey;
         font-style: italic;
     }
-    .poetry {
+    .poetry, p.poem {
         text-align: left;
-        margin: 0 5em;
+        margin: 0 0 0 5em;
     }
     .poetry .indent0 {
         text-indent: -3em;
@@ -160,7 +161,7 @@
         margin: 0 auto;
         padding: 0.25em;
     }
-    .fig {
+    div.fig {
         display: block;
         margin: 0 auto;
         text-align: center;
@@ -214,10 +215,16 @@
         text-align: center;
     }
     .left, .tdl {
-        text-align: right;
+        text-align: left;
     }
     .right, .tdr {
         text-align: right;
+    }
+    .noindent {
+        text-indent: 0%;
+    }
+    .asterism {
+        text-align: center;
     }
     .dropcap {
         float: left;
